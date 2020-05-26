@@ -1,6 +1,6 @@
 USE codeup_test_db;
 
-SELECT 'Pink Floyd Albums' AS 'Exercise 1';
+SELECT 'Pink Floyd Albums' AS 'Exercise 1'; -- captions
 SELECT * FROM albums WHERE artist = 'Pink Floyd';
 
 SELECT 'Sgt. Pepper''s Lonely Hearts Club Band' AS 'Exercise 1';
