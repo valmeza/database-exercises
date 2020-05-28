@@ -10,8 +10,8 @@ WHERE last_name LIKE 'E%'
   AND last_name LIKE '%E'
 GROUP BY last_name;
 
-SELECT DISTINCT first_name, COUNT(first_name) AS 'firstNameCount',
-                last_name, COUNT(last_name) AS 'lastNameCount'
+SELECT DISTINCT first_name, COUNT(first_name) AS 'distinctFirstNameCount',
+                last_name, COUNT(last_name) AS 'distinctLastNameCount'
 FROM employees
 WHERE (last_name LIKE 'E%')
 AND (last_name LIKE '%E')
