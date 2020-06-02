@@ -12,5 +12,18 @@ WHERE hire_date IN (
     WHERE hire_date LIKE '1990-10-22'
     );
 
+SELECT title
+FROM titles
+WHERE emp_no IN (
+    SELECT emp_no
+    FROM employees
+    WHERE first_name LIKE 'Aamod'
+    );
+
 SELECT DISTINCT title
-FROM titles;
+FROM titles
+WHERE emp_no IN (
+    SELECT emp_no
+    FROM employees
+    WHERE first_name LIKE 'Aamod'
+);
